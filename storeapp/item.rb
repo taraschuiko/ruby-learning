@@ -1,7 +1,8 @@
 class Item
 
-  def initialize
-    @price = 30
+  def initialize(options)
+    @price = options[:price]
+    @weight = options[:weight]
   end
 
   attr_reader :price, :weight
@@ -9,7 +10,6 @@ class Item
   
 end
 
-item1 = Item.new
+item1 = Item.new({:price => 30, :weight => 10})
 puts item1.price
-item1.price = 10
-puts item1.price
+puts item1.weight
