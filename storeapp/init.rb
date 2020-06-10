@@ -1,13 +1,5 @@
 require_relative "item"
 require_relative "cart"
 
-cart = Cart.new
-
-cart.add_item(Item.new)
-cart.add_item(Item.new)
-
-p cart.items
-
-cart.remove_item
-
-p cart.items
+item = Item.new({:price => 10, :weight => 100, :name => "Car"})
+item.info { |attr| puts attr }
