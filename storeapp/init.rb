@@ -9,6 +9,4 @@ cart = Cart.new
 cart.add_item item1
 cart.add_item item2
 
-p cart.items
-cart.delete_invalid_items
-p cart.items
+puts item1.price
