@@ -1,6 +1,6 @@
 require_relative "item_container"
 
-class Cart
+class Order
 
   attr_reader :items
 
@@ -8,6 +8,10 @@ class Cart
 
   def initialize
     @items = []
+  end
+
+  def place
+    # place an order
   end
 
 end
